@@ -5,7 +5,6 @@ var outputA1 = document.querySelector("#output");
 isTriangleBtn.addEventListener("click",isTriangle)
 
 function isTriangle(){
-    console.log(inputs[0])
     const sum = calculateSumOfAngles(
         Number(inputs[0].value),
         Number(inputs[1].value),
