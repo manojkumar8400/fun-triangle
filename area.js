@@ -7,13 +7,14 @@ calculate.addEventListener("click",calculateArea);
 
 
 function calculateArea(){
-    const area = sumOfSides();
-    var sp = (area/2)
-    var areaOfTriangle = sp*(sp-(Number(sides[0].value)))*(sp-(Number(sides[1].value)))*(sp-(Number(sides[2].value)))
+    const area = 
+    sumOfSides(Number(sides[0].value),
+    Number(sides[1].value));
+    var areaOfTriangle = ((1/2)*area)
     
     output.innerText="The area of the triangle is "+ String(areaOfTriangle**(0.5))
 }
 
 function sumOfSides(){
-    return Number(sides[0].value) + Number(sides[1].value) + Number(sides[2].value) 
+    return Number(sides[0].value) * Number(sides[1].value)
 }
